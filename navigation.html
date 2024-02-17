@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive Navbar</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="navigation.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="https://auston.edu.mm/" target="_blank"><img src="media/austonlogo.png" alt="Auston" width="120px" height="auto" class="Auston"></a>
+      <input type="checkbox" id="hamburger" />
+      <label for="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <ul>
+        <li>
+          <a href="#Account" class="active" onclick="Student_PP()">Account</a>
+        </li>
+        <li>
+          <a href="#Timetable" onclick="Timetable()">Timetable</a>
+        </li>
+        <li>
+          <a href="#Attendance">Attendance</a>
+        </li>
+        <li>
+          <a href="#Grades">Grades</a>
+        </li>
+        <li>
+          <a href="#HDIN Lecturers" onclick="HTML_Academic()">HDIN Lecturers</a>
+        </li>
+        <li>
+          <a href="#Student Service" onclick="StudentService()">Student Service</a>
+        </li>
+      </ul>
+    </nav>
+    <script>
+      function StudentService() {
+          location='HTML_AU_SS.html';
+      }
+  </script>
+  <script>
+      function HTML_Academic() {
+          location='HTML_Academic.html';
+      }
+  </script>
+  <script>
+    function Student_PP() {
+        location='stu_pp.html';
+    }
+  </script>
+  <script>
+    function Timetable() {
+        location='Timetable.html';
+    }
+  </script>
+</body>
+</html>

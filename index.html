@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body
+    {
+      background-color: #131A48;
+      color: #0F1F89;
+    }
+    .container 
+    {
+      position: relative;
+      height: 97.5vh; /* Set container height to 100% of viewport height */
+    }
+    img
+    {
+      position: absolute;
+      margin-left: -10px;
+      width: 75%;
+      height: 100%;
+      left: 0;
+      border-radius: 20px;
+      box-shadow: 7px 9px 16px -1px rgba(0,0,0,0.76);
+    }
+    .formdiv 
+    {
+      position: absolute;
+      right: 10px;
+      top: 10%;
+      width: 320px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: -10px 10px 19px -1px rgba(0,0,0,0.64);
+      margin-top: 100px;
+    }
+    
+    h2 
+    {
+      text-align: center;
+    }
+    
+    .input-group 
+    {
+      margin-bottom: 20px;
+    }
+    
+    .input-group label 
+    {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .input-group input 
+    {
+      width: 99%;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      color: #0F1F89;
+    }
+    
+    .input-group input[type="submit"] 
+    {
+      background-color: #0F1F89;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    .input-group input[type="submit"]:hover 
+    {
+      background-color: #141A4C;
+    }
+    /* .loginbtn
+    {
+      width: 80%;
+      text-align: center;
+    } */
+    .not_a_student
+    {
+      text-align: center;
+      width: fit-content;
+      /* background-color: #0F1F89; */
+      margin: auto;
+      width: 48%;
+      /* border: 3px solid #0F1F89; */
+       /* border-radius: 2px; */
+      padding: 5px;
+    }
+    .not_a_student > a
+    {
+      text-decoration: none;
+      color: #0F1F89;
+    }
+    .not_a_student :hover
+    {
+      font-size: 11pt;
+      color: #000b54;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="media/auston_login.jpg" alt="image">
+    <div class="formdiv">
+      <h2>Login Your Student Account</h2>
+        <form action="LoginCode.php" method="post">
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="txtemail" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="txtpass" required>
+          </div>
+          <div class="input-group">
+            <input type="submit" value="Login" name="btnlogin" onclick="errormessage()">
+            <!-- <button type="submit" value="Login" name="btnlogin" onclick="errormessage()" class="loginbtn">Login</button> -->
+          </div>
+          <p id="ErrorMessage"></p>
+          <div class="not_a_student">
+            <a href="https://auston.edu.mm/" target="_blank">Not A Auston Student!</a>
+          </div>
+        </form>
+    </div>
+  </div>
+  
+  <!-- <script>
+    function errormessage()
+    {
+      document.getElementById('ErrorMessage').innerHTML = "Invalid Number! Try Again!" 
+    }
+  </script> -->
+</body>
+</html>
